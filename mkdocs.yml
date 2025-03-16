@@ -2,9 +2,18 @@ site_name: Curupipe
 theme:
   name: material
   palette:
-    - scheme: slate  # Ativa o modo escuro automático
+    - scheme: default  # Tema claro padrão
       primary: black
       accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo escuro
+    - scheme: slate  # Tema escuro
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo claro
   features:
     - navigation.tabs
     - navigation.instant
@@ -14,6 +23,7 @@ theme:
     - search.highlight
     - navigation.instant
     - toc.integrate
+    - content.code.copy
 repo_url: https://github.com/Anderson-adm/curupipe
 nav:
   - Home: index.md
